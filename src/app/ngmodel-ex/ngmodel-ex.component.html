@@ -1,0 +1,8 @@
+<p>ngmodel-ex works!</p>
+<label for="id1">Price</label>
+<input type="text" name="productPrice" id="id1" [(ngModel)]="price" (ngModelChange)="calcultateTotalPrice()"> <br><br>
+
+<label for="id1">Quantity</label>
+<input type="text" name="quantity" id="id2" [(ngModel)]="quantity" (ngModelChange)="calcultateTotalPrice()"> <br><br>
+
+<h4>Total Price: {{totalPrice}}</h4>

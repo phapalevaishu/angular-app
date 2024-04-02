@@ -1,0 +1,16 @@
+<p>event-ex works!</p>
+<button type="btn" (click)="performAction ( 'increment')">increment</button> {{counter}}
+<button type="btn" (click)="performAction ( 'decrement')">decrement</button>
+
+<h3 (mouseover)="printMesage()">hover me</h3>
+<label for="id1">product price</label>
+<input type="text" name="price" id="id1" (change)="productpricechange($event)">
+<br><br>
+<label for="id1">quantity</label>
+<input type="text" name="quantity" id="id1" (change)="quantitychange($event)">
+<br><br>
+<h3>Total price : {{totalprice}}</h3>
+<label for="id4">First Name</label>
+
+<input type="text" name="fname" id="id4" [value]="firstName" (change)="FNameChange($event)">
+<h5>Enter your name: {{firstName}}

@@ -1,0 +1,21 @@
+<div class="container w-50 border mt-2 p-2">
+    <form #registerationForm="ngForm" (ngSubmit)="submitForm(registerationForm)">
+        <h4>Template Driven Form</h4>
+        <div class="mb-3">
+            <label for="id1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="id1" name="fName" ngModel #fName="ngModel"> {{fName.value}}
+        </div>
+        <div class="mb-3">
+            <label for="id2" class="form-label">Mobile No</label>
+            <input type="text" class="form-control" id="id2" name="mobNo" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="id3" class="form-label">Email</label>
+            <input type="email" class="form-control" id="id3" name="email" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="id4" class="form-label">City</label>
+            <input type="text" class="form-control" id="id4" name="cityName" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>

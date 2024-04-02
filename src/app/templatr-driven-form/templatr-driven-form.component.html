@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Employee Name</th>
+            <th scope="col">Designation</th>
+            <th scope="col">Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let employee of employeeList;let i=index;let o=odd;let e=even;">
+            <tr *ngIf="employee.salary > 50000">
+                <th>{{i+1}}</th>
+                <td>{{employee.empName}}</td>
+                <td>{{employee.designation}}</td>
+                <td>{{employee.salary}}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
